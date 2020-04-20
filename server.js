@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
 
-app.use(express.static("css"));
-app.use(express.static("vendor"));
-app.use(express.static("vendor/bootstrap/css"));
-app.use(express.static("vendor/bootstrap/js"));
-app.use(express.static("vendor/jquery"));
+app.use(express.static("public"));
+
+
+
+
 
 app.get("/", (request, response) => {
   response.sendFile(__dirname + "/index.html");
